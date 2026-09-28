@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66FFFFFF"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center"
+            android:text="CREATE ACCOUNT"
+            android:textColor="#803A61"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Sign up to get started"
+            android:textColor="#594651"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#A64D78"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:textColor="#382B32"
+            android:textColorHint="#725F69" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#A64D78"
+            android:hint="Email address"
+            android:inputType="textEmailAddress"
+            android:textColor="#382B32"
+            android:textColorHint="#725F69" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#A64D78"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#382B32"
+            android:textColorHint="#725F69" />
+
+        <EditText
+            android:id="@+id/confirmPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#A64D78"
+            android:hint="Confirm password"
+            android:inputType="textPassword"
+            android:textColor="#382B32"
+            android:textColorHint="#725F69" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select gender"
+            android:textColor="#803A61"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/genderGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/maleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:buttonTint="#A64D78"
+                android:text="Male"
+                android:textColor="#382B32" />
+
+            <RadioButton
+                android:id="@+id/femaleRadio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#A64D78"
+                android:text="Female"
+                android:textColor="#382B32" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preferences"
+            android:textColor="#803A61"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/updatesCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#A64D78"
+            android:text="Send me updates"
+            android:textColor="#382B32" />
+
+        <CheckBox
+            android:id="@+id/offersCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="#A64D78"
+            android:text="Send me special offers"
+            android:textColor="#382B32" />
+
+        <CheckBox
+            android:id="@+id/termsCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:buttonTint="#A64D78"
+            android:text="I agree to the terms and conditions"
+            android:textColor="#382B32" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:backgroundTint="#A64D78"
+            android:text="SIGN UP"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
