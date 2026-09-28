@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/mountains"
+        android:scaleType="centerCrop"
+        android:contentDescription="Travel Background" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="28dp"
+                android:gravity="center"
+                android:text="SIGN UP"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:textColor="#18313E"
+                android:textColorHint="#687D87" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"
+                android:textColor="#18313E"
+                android:textColorHint="#687D87" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="#18313E"
+                android:textColorHint="#687D87" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#18313E"
+                android:textColorHint="#687D87" />
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:textColor="#18313E"
+                android:textColorHint="#687D87" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Gender"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroupGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/radio_button_color"
+                    app:buttonTint="@color/radio_button_color"
+                    android:text="Male"
+                    android:textColor="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/radio_button_color"
+                    app:buttonTint="@color/radio_button_color"
+                    android:text="Female"
+                    android:textColor="#FFFFFF" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Travel Preferences"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/checkAdventure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@null"
+                app:buttonTint="@null"
+                android:text="Adventure Trips"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/checkFamily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@null"
+                app:buttonTint="@null"
+                android:text="Family Tours"
+                android:textColor="#FFFFFF" />
+
+            <CheckBox
+                android:id="@+id/checkTerms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:button="@drawable/custom_checkbox"
+                android:buttonTint="@null"
+                app:buttonTint="@null"
+                android:text="I accept Terms and Conditions"
+                android:textColor="#FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/submit_button_background"
+                    android:backgroundTint="@null"
+                    android:text="SUBMIT"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnClear"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/clear_button_background"
+                    android:backgroundTint="@null"
+                    android:text="CLEAR"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvOpenLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Already have an account?  LOGIN"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
